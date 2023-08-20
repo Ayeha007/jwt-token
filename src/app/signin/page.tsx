@@ -34,10 +34,10 @@ const SignInForm = () => {
 };
 return (
     <div className="flex justify-center items-center h-screen">
-      <form className="p-4 bg-white rounded shadow-md w-80">
+      <form className="p-4 bg-white rounded shadow-md w-80" onSubmit={handleSubmit}>
         <h2 className="text-2xl font-bold mb-4">User Information</h2>
         <div className="mb-4">
-          <label htmlFor="user Email" className="block text-gray-700 font-semibold">User Name:</label>
+          <label htmlFor="user Email" className="block text-gray-700 font-semibold">User Email:</label>
           <input
             type="text"
             id="userEmail"
@@ -61,7 +61,6 @@ return (
       
         <button
           type="submit"
-          onSubmit={handleSubmit}
           className="w-full bg-blue-500 text-white rounded py-2 font-semibold hover:bg-blue-600"
         >
           Submit
